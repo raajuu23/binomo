@@ -21,7 +21,7 @@ from selenium.webdriver.chrome.options import Options
 # ==================== DETAILS ====================
 BINOMO_EMAIL = "wdqghwdhhwh@gmail.com"
 BINOMO_PASSWORD = "Treding_4792"
-TELEGRAM_BOT_TOKEN = "8524378866:AAGlA9W3AS6ns8qUFqIZuZApaGkJwKwSWNA"
+TELEGRAM_BOT_TOKEN = "8524378866:AAHhCEt34y1noCDkRYw4e6cURA0r0Vn8Ahs"
 # =================================================
 
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
