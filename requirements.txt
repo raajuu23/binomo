@@ -23,22 +23,12 @@ mplfinance>=0.12.9a0
 plotly>=5.17.0
 pillow>=10.0.0
 
-# Technical Analysis Library (Optional but recommended)
-ta-lib>=0.4.28  # Note: Needs manual install on Windows
-TA-Lib>=0.4.28
-
 # Async Support
 aiohttp>=3.9.0
-asyncio>=3.4.3
 
 # Utilities
 colorama>=0.4.6
 prettytable>=3.9.0
 termcolor>=2.3.0
 tqdm>=4.66.0
-
-# Database (for storing trade history)
-sqlite3  # Built-in, no need to install
-
-# For better performance
 cryptography>=41.0.0
