@@ -1,22 +1,44 @@
-# Core Requirements (Python 3.11 compatible)
-python-telegram-bot==20.7
-python-dotenv==1.0.0
+# Core Dependencies
+selenium>=4.15.0
+undetected-chromedriver>=3.5.4
+webdriver-manager>=4.0.1
 
-# Web & API
-requests==2.31.0
-aiohttp==3.8.6
+# Telegram Bot
+python-telegram-bot>=20.7
 
-# Data Processing
-numpy==1.24.3
+# Data Processing & Math
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Web Scraping & HTTP
+requests>=2.31.0
+cloudscraper>=1.2.71
+fake-useragent>=1.4.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Charting & Visualization
+matplotlib>=3.7.0
+mplfinance>=0.12.9a0
+plotly>=5.17.0
+pillow>=10.0.0
+
+# Technical Analysis Library (Optional but recommended)
+ta-lib>=0.4.28  # Note: Needs manual install on Windows
+TA-Lib>=0.4.28
 
 # Async Support
-asyncio==3.4.3
+aiohttp>=3.9.0
+asyncio>=3.4.3
 
-# Scheduling
-apscheduler==3.10.4
+# Utilities
+colorama>=0.4.6
+prettytable>=3.9.0
+termcolor>=2.3.0
+tqdm>=4.66.0
 
-# Logging
-colorlog==6.8.0
+# Database (for storing trade history)
+sqlite3  # Built-in, no need to install
 
-# Database
-sqlalchemy==2.0.23
+# For better performance
+cryptography>=41.0.0
