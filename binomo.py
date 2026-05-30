@@ -8,7 +8,7 @@ BINOMO ULTIMATE TRADING BOT v5.0
 - Highest Accuracy Predictions
 - Telegram Bot Interface
 """
-
+import os
 import logging
 import random
 import math
@@ -31,7 +31,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = "8524378866:AAGlA9W3AS6ns8qUFqIZuZApaGkJwKwSWNA"
+from dotenv import load_dotenv
+
+# Load .env file
+load_dotenv()
+
+# ==================== BINOMO LOGIN CREDENTIALS ====================
+DEFAULT_EMAIL = os.environ.get("BINOMO_EMAIL", "demo@binomo.com")
+DEFAULT_PASSWORD = os.environ.get("BINOMO_PASSWORD", "demo123")
 
 # ==================== BINOMO LOGIN HANDLER ====================
 class BinomoLogin:
