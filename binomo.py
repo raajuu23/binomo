@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = "8524378866:AAEq9jLXXAhruO1LJuGsTr0L2fyBFQe7iZQ"
+BOT_TOKEN = "8524378866:AAGlA9W3AS6ns8qUFqIZuZApaGkJwKwSWNA"
 
 # ==================== BINOMO LOGIN HANDLER ====================
 class BinomoLogin:
