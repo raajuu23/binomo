@@ -36,7 +36,53 @@ from dotenv import load_dotenv
 
 # Load .env file
 load_dotenv()
-
+# ==================== ASSETS CONFIGURATION ====================
+ASSETS = {
+    # Forex (10 assets)
+    "EURUSD": {"name": "EUR/USD", "type": "Forex", "base": 1.0850, "volatility": 0.0005, "spread": 0.0001},
+    "GBPUSD": {"name": "GBP/USD", "type": "Forex", "base": 1.2650, "volatility": 0.0005, "spread": 0.0001},
+    "USDJPY": {"name": "USD/JPY", "type": "Forex", "base": 148.50, "volatility": 0.0500, "spread": 0.0100},
+    "USDCHF": {"name": "USD/CHF", "type": "Forex", "base": 0.9050, "volatility": 0.0004, "spread": 0.0001},
+    "USDCAD": {"name": "USD/CAD", "type": "Forex", "base": 1.3650, "volatility": 0.0004, "spread": 0.0001},
+    "AUDUSD": {"name": "AUD/USD", "type": "Forex", "base": 0.6650, "volatility": 0.0004, "spread": 0.0001},
+    "NZDUSD": {"name": "NZD/USD", "type": "Forex", "base": 0.6150, "volatility": 0.0004, "spread": 0.0001},
+    "EURGBP": {"name": "EUR/GBP", "type": "Forex", "base": 0.8570, "volatility": 0.0003, "spread": 0.0001},
+    "EURAUD": {"name": "EUR/AUD", "type": "Forex", "base": 1.6300, "volatility": 0.0005, "spread": 0.0002},
+    "GBPJPY": {"name": "GBP/JPY", "type": "Forex", "base": 187.50, "volatility": 0.0600, "spread": 0.0150},
+    
+    # Crypto (10 assets)
+    "BTCUSD": {"name": "Bitcoin", "type": "Crypto", "base": 42000, "volatility": 2.0, "spread": 10},
+    "ETHUSD": {"name": "Ethereum", "type": "Crypto", "base": 2200, "volatility": 2.5, "spread": 5},
+    "BNBUSD": {"name": "Binance Coin", "type": "Crypto", "base": 310, "volatility": 2.0, "spread": 1},
+    "XRPUSD": {"name": "Ripple", "type": "Crypto", "base": 0.62, "volatility": 2.5, "spread": 0.01},
+    "ADAUSD": {"name": "Cardano", "type": "Crypto", "base": 0.38, "volatility": 3.0, "spread": 0.01},
+    "SOLUSD": {"name": "Solana", "type": "Crypto", "base": 95, "volatility": 3.5, "spread": 0.5},
+    "DOGEUSD": {"name": "Dogecoin", "type": "Crypto", "base": 0.082, "volatility": 4.0, "spread": 0.001},
+    "DOTUSD": {"name": "Polkadot", "type": "Crypto", "base": 7.20, "volatility": 3.0, "spread": 0.05},
+    "LTCUSD": {"name": "Litecoin", "type": "Crypto", "base": 68, "volatility": 2.5, "spread": 0.5},
+    "AVAXUSD": {"name": "Avalanche", "type": "Crypto", "base": 34, "volatility": 3.5, "spread": 0.2},
+    
+    # Indices (5 assets)
+    "US500": {"name": "S&P 500", "type": "Indices", "base": 4780, "volatility": 0.8, "spread": 1},
+    "US30": {"name": "Dow Jones", "type": "Indices", "base": 37600, "volatility": 0.7, "spread": 10},
+    "NAS100": {"name": "Nasdaq 100", "type": "Indices", "base": 16800, "volatility": 1.0, "spread": 10},
+    "UK100": {"name": "FTSE 100", "type": "Indices", "base": 7650, "volatility": 0.6, "spread": 5},
+    "GER40": {"name": "DAX 40", "type": "Indices", "base": 16850, "volatility": 0.8, "spread": 5},
+    
+    # Commodities (5 assets)
+    "GOLD": {"name": "Gold", "type": "Commodities", "base": 2040, "volatility": 0.8, "spread": 1},
+    "SILVER": {"name": "Silver", "type": "Commodities", "base": 23.50, "volatility": 1.2, "spread": 0.05},
+    "OIL": {"name": "WTI Crude", "type": "Commodities", "base": 72.50, "volatility": 1.5, "spread": 0.10},
+    "NGAS": {"name": "Natural Gas", "type": "Commodities", "base": 2.45, "volatility": 2.0, "spread": 0.05},
+    "COPPER": {"name": "Copper", "type": "Commodities", "base": 3.85, "volatility": 1.0, "spread": 0.02},
+    
+    # Stocks (5 assets)
+    "AAPL": {"name": "Apple Inc", "type": "Stocks", "base": 185, "volatility": 1.5, "spread": 0.5},
+    "GOOGL": {"name": "Google", "type": "Stocks", "base": 140, "volatility": 1.5, "spread": 0.5},
+    "MSFT": {"name": "Microsoft", "type": "Stocks", "base": 385, "volatility": 1.3, "spread": 0.5},
+    "AMZN": {"name": "Amazon", "type": "Stocks", "base": 148, "volatility": 1.8, "spread": 0.5},
+    "TSLA": {"name": "Tesla", "type": "Stocks", "base": 240, "volatility": 2.5, "spread": 1},
+}
 # ==================== BINOMO LOGIN CREDENTIALS ====================
 DEFAULT_EMAIL = os.environ.get("BINOMO_EMAIL", "demo@binomo.com")
 DEFAULT_PASSWORD = os.environ.get("BINOMO_PASSWORD", "demo123")
