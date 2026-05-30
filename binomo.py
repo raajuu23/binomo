@@ -30,6 +30,7 @@ logging.basicConfig(
     level=logging.WARNING
 )
 logger = logging.getLogger(__name__)
+BOT_TOKEN = "8524378866:AAGlA9W3AS6ns8qUFqIZuZApaGkJwKwSWNA"
 
 from dotenv import load_dotenv
 
